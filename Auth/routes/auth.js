@@ -32,7 +32,7 @@ router.post("/register", async (req, res) => {
     // save new user
     try {
       const savedUser = await user.save();
-      res.send({ user: user._id });
+      res.send(savedUser);
     } catch (err) {
       res, status(400).send(err);
     }
@@ -57,7 +57,7 @@ router.post('/login', async (req,res)=>{
 //   const token = jwt.sign({ _id: user._id }, 'ajjsadhjhdsjhajd');
 //   res.header("auth-token", token).send(token);
 
-return res.status(200).send({Login_status: 'success', message: "Login is Succesfull" });
+return res.status(200).send({Login_status: 'success', message: "Login is Succesfull", name: user.name });
 
 });
 // router.post('/getUsers', function(req, res){

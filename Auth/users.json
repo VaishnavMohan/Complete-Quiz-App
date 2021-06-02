@@ -3,22 +3,20 @@
     {
       "question": "India is my Country",
       "answer": "Yes",
+      "options": ["111", "222", "333", "Yes"],
       "id": 4
     },
     {
       "question": "India is my Country",
       "answer": "Yes",
-      "id": 5
+      "options": ["111", "222", "333", "Yes"],
+      "id": 4
     },
     {
-      "question": "India is my Countrysadasda",
+      "question": "India is my Country",
       "answer": "Yes",
-      "id": 6
-    },
-    {
-      "question": "India is my Countrysadasda",
-      "answer": "Yeszz",
-      "id": 7
+      "options": ["111", "222", "333", "Yes"],
+      "id": 4
     }
   ]
 }
