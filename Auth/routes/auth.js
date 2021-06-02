@@ -60,12 +60,12 @@ router.post('/login', async (req,res)=>{
 return res.status(200).send({Login_status: 'success', message: "Login is Succesfull" });
 
 });
-router.post('/getUsers', function(req, res){
-  fs.readFile(__dirname, "/" + "users.json", function(err, data){
-      console.log(data);
-      res.send(data); 
-  });
-})
+// router.post('/getUsers', function(req, res){
+//   fs.readFile(__dirname, "/" + "users.json", function(err, data){
+//       console.log(data);
+//       res.send(data); 
+//   });
+// })
 
 
 module.exports = router;

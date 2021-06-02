@@ -1,3 +1,5 @@
+import 'package:Quiz/pages/dashboard.dart';
+import 'package:Quiz/pages/homepage.dart';
 import 'package:Quiz/pages/login.dart';
 import 'package:flutter/material.dart';
 
