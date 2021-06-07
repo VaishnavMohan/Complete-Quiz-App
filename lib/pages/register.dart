@@ -38,7 +38,7 @@ class _NewUserState extends State<NewUser> {
     var status = jsonDecode(res.body)['Login_status'];
     print('${status}');
     var message = jsonDecode(res.body)['message'];
-    if (status == 'fail') {
+    if (status == 'success') {
       Navigator.push(
         context,
         new MaterialPageRoute(builder: (context) => LoginPage()),

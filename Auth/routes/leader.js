@@ -7,8 +7,10 @@ const Questions = require('../model/Scoremodel');
 router.post("/leader", async (req, res) => {
     // await db.questions.find().forEach(printjson);
     // console.log(questions);
+    
     var top;
   db.collection("scoremodels").find({}).toArray(function(err, result) {
+    // db.collection("scoremodels").find({}).sort({score:1})
       if (err) throw err;
       console.log(result);
       var top = result;

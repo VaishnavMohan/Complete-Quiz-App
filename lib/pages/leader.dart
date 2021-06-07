@@ -75,21 +75,31 @@ class _LeaderUIState extends State<LeaderUI> {
       children: [
         SizedBox(
           height: 40,
+          width: 20,
         ),
         Container(
-          child: Text('${widget.index + 1}'),
+          child: Text(
+            '${widget.index + 1}',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
         SizedBox(
           width: 30,
         ),
         Container(
-          child: Text(widget.leader),
+          child: Text(
+            widget.leader,
+            style: TextStyle(fontSize: 20),
+          ),
         ),
         SizedBox(
           width: 30,
         ),
         Container(
-          child: Text('${widget.score}'),
+          child: Text(
+            '${widget.score}',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
       ],
     ));
